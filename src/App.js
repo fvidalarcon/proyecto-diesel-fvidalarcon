@@ -1,17 +1,23 @@
-import React, { Fragment } from 'react';
+import React from "react";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+//components
 import Header from './components/Header';
-import SearchDieselStation from './components/SearchDieselStation';
 import Footer from './components/Footer';
 
+import Home from './pages/Home';
 
 const App = () => (
-      <Fragment>
-        <Header/>
-        <SearchDieselStation/>
-        <Footer/>
-      </Fragment>
+  <BrowserRouter>
+    <Header/>
+    <Switch>
+      <Route exact path='/' component={Home} />
+    </Switch>
+    <Footer />
+  </BrowserRouter>
 );
 
-App.displayName = 'App'; //description component
+
+App.displayName = "App";
 
 export default App;

@@ -1,12 +1,13 @@
 import React from 'react';
 
 const Footer = () => (
-
-    <Footer>
-        <p>&copy; { new Date().getFullYear} -  @fvidalarcon</p>
-    </Footer>
+    <footer>
+        <p>&copy; { new Date().getFullYear()} - fvidalarcon</p>
+    </footer>
 );
-
-Footer.displayname = 'Footer';
+Footer.displayName = 'Footer';
 
 export default Footer;
+
+
+
